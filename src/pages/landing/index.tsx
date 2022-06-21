@@ -13,7 +13,7 @@ function Landing() {
   return (
     <div id="page-landing">
       <div id="page-landing-content" className="container">
-        <div className="logocontainer">
+        <div className="logo-container">
           <img src={logoImg} alt="Proffy" />
           <h2>Sua plataforma de estudos onlines</h2>
         </div>
