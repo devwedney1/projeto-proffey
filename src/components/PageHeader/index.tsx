@@ -4,7 +4,12 @@ import { Link } from 'react-router-dom';
 import logoImg from '../../assets/images/logo.svg'
 import backIcon from '../../assets/images/icons/back.svg'
 
-function PagaHeader() {
+interface PageHeaderProps {
+  title: string;
+  children: React.ReactNode;
+}
+
+const PageHeader: React.FC<PageHeaderProps> = (props) => {
   return (
     <header className="page-header">
       <div className="top-bar-container">
@@ -14,10 +19,12 @@ function PagaHeader() {
         <img src={logoImg} alt="Proffy" />
       </div>
       <div className="header-content">
-        <strong>Estes são os proffys disponiveis.</strong>
+        <strong>{props.title}</strong>
+        
+        {props.children}
       </div>
     </header>
   );
 }
 
-export default PagaHeader;
+export default PageHeader;

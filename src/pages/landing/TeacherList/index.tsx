@@ -3,12 +3,14 @@ import PageHeader from '../../../components/PageHeader'
 
 import './styles.css';
 
-function TeacherList(){
+function TeacherList() {
   return (
     <div id="page-teacher-list" className="container">
-      <PageHeader />
+      <PageHeader title="Estes são os proffys disponiveis.">
+        teste
+      </PageHeader>
     </div>
-  )
+  );
 }
 
 export default TeacherList;
